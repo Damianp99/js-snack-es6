@@ -11,28 +11,34 @@ Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengo
 const teams = [
     {
         name: 'Juventus',
-        puntifatti: 0,
+        puntiFatti: 0,
         falliSubiti: 0,
     },
     {
         name: 'Inter',
-        puntifatti: 0,
+        puntiFatti: 0,
         falliSubiti: 0,
     },
     {
         name: 'Roma',
-        puntifatti: 0,
+        puntiFatti: 0,
         falliSubiti: 0,
     },
     {
         name: 'Lazio',
-        puntifatti: 0,
+        puntiFatti: 0,
         falliSubiti: 0,
     },
 ]
 
 // function
-const getRandomNumber = (min, max) => Math.floor(Math.random() + (max - min + 1)) + min;
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
+for (let i = 0; i < teams.length; i++) {
+    const team = teams[i];
+    team.puntiFatti = getRandomNumber(1, 100)
+    team.falliSubiti = getRandomNumber(1, 100)
+}
 
-
+console.log(teams)
+const newStats = [];
