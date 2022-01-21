@@ -18,6 +18,7 @@ const images = [
 console.log(images);
 
 
+/*
 const getSize = images.filter((img) => {
     if (img.imgSize > 250 && img.imgSize < 350) {
         return true;
@@ -25,3 +26,11 @@ const getSize = images.filter((img) => {
 });
 
 console.log(getSize)
+*/
+
+// function
+const getSize = (array, min, max) => {
+    return array.filter((img) => (img.imgSize > min) && (img.imgSize < max));
+}
+const range = getSize(images, 250, 350);
+console.log(range)
