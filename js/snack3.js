@@ -16,3 +16,12 @@ const images = [
 ]
 
 console.log(images);
+
+
+const getSize = images.filter((img) => {
+    if (img.imgSize > 250 && img.imgSize < 350) {
+        return true;
+    }
+});
+
+console.log(getSize)
