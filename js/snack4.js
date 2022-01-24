@@ -18,6 +18,19 @@ let students = [
     { name: 'Marino', id: 196, grades: 71 },
 ]
 
+const studentGrades = students.filter((student) => {
+    return student.grades > 70
+})
+const topStudent = students.filter((student) => {
+    return student.grades > 70 && student.id > 120
+});
+
+console.log(studentGrades);
+console.log(topStudent);
+
+
+
+
 
 
 
