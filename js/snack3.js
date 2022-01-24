@@ -28,9 +28,21 @@ const getSize = images.filter((img) => {
 console.log(getSize)
 */
 
-// function
+// function FILTER
 const getSize = (array, min, max) => {
     return array.filter((img) => (img.imgSize > min) && (img.imgSize < max));
 }
 const range = getSize(images, 250, 350);
 console.log(range)
+
+/* SOLUZIONE CON FOREACH
+const arraySlice = (arr, start, end) => {
+    const newArray = [];
+    arr.forEach((item, index) => {
+        if (index >= start && index <= end) {
+            newArray.push(item);
+        }
+    })
+    return newArray; a
+}
+*/
