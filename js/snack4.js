@@ -8,3 +8,17 @@ ES (marco de iulio => Marco de iulio);
 BONUS  nei nomi sulle targhe l'iniziale di ogni parola deve essere maiuscola
 ES.: (marco de iulio  => Marco De Iulio)
 */
+let students = [
+    { name: 'Marco', id: 231, grades: 78 },
+    { name: 'Filippo', id: 145, grades: 54 },
+    { name: 'Giancarlo', id: 123, grades: 32 },
+    { name: 'Cocò', id: 512, grades: 67 },
+    { name: 'Chanel', id: 321, grades: 31 },
+    { name: 'Mario', id: 102, grades: 87 },
+    { name: 'Marino', id: 196, grades: 71 },
+]
+
+
+
+
+
